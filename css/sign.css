@@ -1,0 +1,196 @@
+/* header {
+    /* background-image: url(176935001.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+/* } */
+
+body {
+    width: 100%;
+    height: 100vh;
+    transition: 0.9s;
+    background-image: url(./image/.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+* {
+
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    direction: rtl;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        background-color: #457ac9;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+header nav h1 {
+    color: #cac9bf;
+    font-size: 50px;
+    margin-right: 20px;
+    transition: 2.0s ease-out;
+
+}
+
+nav span {
+    color: rgb(255, 255, 255)
+}
+
+nav li a {
+    color: rgba(218, 198, 23, 0.932);
+    font-size: 20px;
+    transition: 0.4s ease;
+    /* background-color: #002B5B; */
+    border-radius: 10px;
+
+
+}
+
+nav li a:hover {
+    /* font-size: 25px; */
+    color: rgb(190, 7, 62);
+    /* border: solid; */
+    background-color: #e3d0ae;
+    border-radius: 10px;
+
+}
+
+ul li ul.drop li {
+    display: block;
+}
+
+ul li ul.drop {
+    text-align: center;
+    margin-right: -62px;
+    width: 250%;
+    background-color: #e3d0ae;
+    /* border-radius: 50px; */
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li ul.drop a {
+    background: none;
+    color: black;
+}
+ul li ul.drop a:hover {
+    background: none;
+    color: rgb(156, 190, 7)
+}
+
+.mo {
+    font-size: 23px;
+}
+
+
+ul li:hover ul.drop {
+    display: block;
+}
+
+.in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.800);
+    border-radius: 10px;
+}
+
+.in h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin-top: 20px;
+    border-bottom: 1px solid silver;
+}
+
+.in form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.txt_fild {
+    position: relative;
+    border-bottom: 2px solid #002B5B;
+    margin: 30px 0;
+}
+
+.txt_fild input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_fild label {
+    position: absolute;
+    top: 50%;
+    /* left: 5px; */
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/* .txt_fild span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #002B5B;
+
+} */
+
+.txt_fild input:focus~label,
+.txt_fild input:valid~label {
+    top: -5px;
+    color: #002B5B;
+
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    margin-bottom: 22px;
+    background-color: #002B5B;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+
+}
+
+input[type="submit"]:hover {
+    border-color: #002B5B;
+    color: #002B5B;
+    background-color: aliceblue;
+    transition: .5s;
+    font-size: 30px;
+
+}

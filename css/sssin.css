@@ -1,0 +1,157 @@
+
+.landing{
+    height: 100vh;
+}
+
+.landing .row{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.rows {
+    height: 100%;
+    width: 69%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rows .signin {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+     border: none;
+}
+.rows .signup {
+    width: 45%;
+    height: 60%;
+    transform: translate(0px, 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rows .signin div , .rows .signup div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:500px;
+}
+.rows .signin div input , .rows .signup div input {
+    margin-bottom: 10px;
+    width: 300px;
+    text-align: left;
+    /* border-bottom: 5px solid #f10; */
+    border: none;
+}
+/* style for form  */
+  .landing .signin,.signup {
+    background-color: #ff9800;
+    height:500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #000;
+}
+/* Style button submit */
+
+.landing .signin input:nth-of-type(4){
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    transition: .5s ease;
+    cursor: pointer;
+    border: none  ;
+    font-weight: bold;
+}
+.landing .signin input:nth-of-type(4):hover{
+    background-color: #b1df0d;
+    color: #fff;
+    border: none;
+}
+.landing .signup input:nth-of-type(4){
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    transition: .5s ease;
+    cursor: pointer;
+    border: none  ;
+    font-weight: bold;
+}
+.landing .signup input:nth-of-type(4):hover{
+    background-color: #b1df0d;
+    color: #fff;
+    border: none;
+}
+
+.rows span{
+    /* background-color: #888; */
+    width: 2px;
+    height: 605px;
+    margin-left: 7px;
+}
+.signin div label {
+    cursor: pointer;
+    background-color: #888;
+    padding: 8px 50px;
+    margin-bottom: 10px ;
+}
+
+/* Start signupEl */
+.signupEl {
+    background-color: #ff9800;
+    /* height:500px; */
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #000;
+    transform: translate(0px, 100px);
+}
+.text .row .signupEl {
+    width: 45%;
+    height: 60%;
+    transform: translate(0px, 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupEl input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 15px;
+    transition: .5s ease;
+    cursor: pointer;
+    border: none  ;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .rows {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .landing .row .pic{
+        display: none;
+    }
+    .rows span{
+        display: none;
+    }
+}

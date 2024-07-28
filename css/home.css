@@ -1,0 +1,457 @@
+:root {
+    --red:#6a1b9a;
+    --main:#ff9800;
+}
+body {
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  
+    
+}
+.container{
+   padding-left: 10px;
+    padding-right: 23px;
+}
+.special-heading{
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
+
+.special-heading::after{
+    content: '';
+    margin-top: 45px;
+    margin-bottom: 5px;
+    width: 130px;
+    height: 2px;
+    background-color:var(--red);
+    position: absolute;
+    text-align: center;
+    /****(center element)*****/
+   left: 50%;
+   transform: translate(-52%);
+   }
+
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+      /* text-align: center; */
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    /* text-align: center; */
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+
+.header{
+    height: 68px;
+    width: 100%;
+    background-color:var(--main);
+}
+.header .logo {
+    width: 180px;
+    height: 68px;
+}
+.header .logo img{
+    width: 70%;
+    height: 100%;
+}
+.header nav{
+    margin-left: 60px;
+    height: 100%;
+}
+.header .itms ul span {
+    background-color: #000;
+    width: 2px;
+    height: 40px;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+.header .itms ul .u {
+    font-size: 130%;
+}
+.header .itms ul li {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin-left: 25px;
+}
+.out input{
+    background: transparent;
+    color:#fff;
+    font-weight: bold;
+    border: 0;
+} .out input:hover{color: #6a1b9a;}
+
+.header .itms{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 120px;
+ }
+ .header nav a:first-child{ color:var(--red) }
+ .header nav a:first-child:hover{ color: #fdd; }
+ .header nav .itms a {
+    color:#fff;
+ }
+ .header nav .itms a:hover{ color: #6a1b9a; }
+
+ .header nav button {
+     border-color: #888;
+ }
+ @media (max-width : 1200px){
+    .itms{
+        font-size: 85%;
+    }
+ }
+ @media (max-width: 992px) {
+    .header .itms ul span {
+        display: none;
+        }
+        .header .itms ul{
+            background-color: #b39ddb;
+        }
+ }
+ @media (max-width: 768px) {
+    .header .itms ul span {
+        display: none;
+        }
+        .header .itms ul{
+            background-color: #b39ddb;
+            width: 100%;
+        }
+        .header nav {
+            margin-top: -12px;
+        }
+  }
+ /***** end header *****/
+
+
+/* Start landing */
+
+.landing {
+    height: 100vh;
+    display: flex;
+    direction: rtl;
+    /* text-align: center; */
+}
+.landing .container .row {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.landing .container .row h5 {
+    transform: translate(-45%,-280%);
+    /* color: #fff; */
+    font-weight: bold;
+    font-size: 30px;
+}
+.landing .container .row img {
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+}
+.landing .container .row .text h4 {
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    top: -20px;
+}
+.landing .container .row .text h4::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    width: 120px;
+    height: 5px;
+    background-color:var(--main)   ;
+}
+.landing .container .row .text p {
+    width: 50%;
+    text-align: right;  
+}
+.landing .container .row .txtforpage h4 {
+    text-align: right;
+    position: relative;
+    margin: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+.landing .container .row .txtforpage h4::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    width: 120px;
+    height: 10px;
+    background-color:var(--main)   ;
+}
+.landing .container .row .txtforpage .p p {
+    text-align: right;
+    margin: 20px;
+}
+ @media (max-width: 768px) {
+    .landing { 
+        margin-left: 30px;
+        height: 100vh;
+    }
+    .landing .container .row {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing .container .pic {
+        height: 50%;
+        width: 80%;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    .landing .container .pic img{
+        height: 100%;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .landing .container .text{
+        height: 45%;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+  }
+
+
+  /******* end landinng ******/
+
+  /* Start loading for about page */
+  .loading .container .row4 {
+    direction: rtl;
+  }
+  .loading .container  .title h2,h3,h4, h5,span {
+    color: #fff;
+    margin: 20px;
+  }
+  .loading .container  p {
+    width: 63%;
+    margin-right: 20px;
+  }
+  /* End loading for about page */
+ /* Start loading for nominate page */
+ .landing .container .titleforpage h2 {
+    font-size: 30px;
+    margin: 20px;
+    color: #fff;
+ }
+ .landing .container .titleforpage h5 {
+    color: #000;
+ }
+ .landing .container   ol li {
+    margin: 10px ;
+ }
+ .landing .container   ul li{
+    margin: 18px ;
+ }
+ .landing .container .titlenominate h4 {
+    width: 600px ;
+    font-size: 20px;
+ }
+ /* End loading for nominate page */
+
+  .stor .container .serch input{
+    background-color: #fdd;
+    border-radius: 10px;
+    border: solid 2px #000;
+    width: 60%;
+  }
+
+  .stor .maste{
+    margin-bottom: 150px;
+  }
+  .stor .master{
+    margin-bottom: 150px;
+  }
+  .stor .master {
+    width: 500px;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50px;
+  } 
+  .stor .master .pr{
+    text-align: center;
+    width: 200px;
+  }
+  .stor .master p {
+    border-bottom: solid #000 2px;
+  }
+  .stor .container {
+    padding-right: 15px;
+  }
+.stor .row .coll {
+    margin-top: 20px;
+    height: 400px;
+    margin-bottom: -80px;
+}
+
+
+@media (max-width: 768px) {
+    .stor .row .coll {
+      height: 250px;
+      margin-bottom: 160px;
+    }
+    .stor .row {
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    .stor .master {
+        font-size: 70%;
+       }
+       .stor .master button {
+        font-size: 85%;
+       }
+}
+
+  /******* end stor ******/
+
+ 
+
+
+.offer .row .coll {
+    margin-top: 20px;
+    height: 400px;
+    margin-bottom: -80px;
+}
+.offer .row .coll .bt{
+    width: 100%;
+}
+.offer .row .coll .inp {
+    width: 100%;
+}
+.offer .row .spn{
+    position: relative;
+    top: 10px;
+    width: 80px;
+    height: 50px;
+   background-color: #b39ddb;
+   border-radius: 40%;
+   text-align: center;
+}
+
+@media (max-width: 768px) {
+    .offer .row .coll {
+      height: 220px;
+      margin-bottom: 230px;
+    }
+    .offer .row {
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+ 
+}
+
+/*****************end offer ********************/
+
+
+.order .special-heading::after{
+    width: 150px;
+   left: 51%;
+   transform: translate(-51%);
+   }
+
+.order {
+   margin-bottom: 20px;
+}
+.order .container{
+    padding-left: 50px;
+}
+
+.order .row {
+    width: 40%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+/******************end order********************/
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 15vh;
+    background-color: var(--main);
+    margin-top: 140px;
+    color: #fff;
+    
+}
+.footer .admin{
+    margin-top: -25px;
+}
+.footer .admin p a{
+  color: #fff;
+} .footer  .admin p a:hover{color: #000;}
+.footer  .row{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer  .row .col {
+    width: 33%;
+    height: 100%;
+    margin: 0px 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+.footer  .row .col a{
+    color: #fff;
+} .footer  .row .col a:hover{color: #000;}
+.footer  .row .col .icon {
+    margin:0px  20px ;
+    font-size: 160%;
+}
+.footer  .row .col .tom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.footer  .row .col .tom i{
+    font-size: 120%;
+}
+@media (max-width: 768px) {
+    .footer  .row .col .icon { 
+        font-size: 90%;
+        margin:0px  10px ;
+    }
+}
